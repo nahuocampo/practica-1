@@ -32,6 +32,8 @@ public static string MD5(string word)
             byte[] stream = null;
             StringBuilder sb = new StringBuilder();
             stream = sha1.ComputeHash(encoding.GetBytes(str));
+	    return sb.ToString();
+        }
   
         public static string SHA256(string str)
         {
